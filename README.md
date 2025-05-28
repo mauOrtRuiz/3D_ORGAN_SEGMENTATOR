@@ -16,6 +16,8 @@ conda activate totalseg
 
 ```TotalSegmentator -i C:\Users\UVMInstaller\Downloads\CT-ORG\Test1\volume-12.nii -o C:\Users\UVMInstaller\Downloads\CT-ORG\Output_bone_filtered_11\Mask_12 --fast --ml```
 
+The segmented mask can be visualized in 3D Slicer
+![image](https://github.com/user-attachments/assets/64ff4842-7886-4277-9e7a-c73526be0bc4)
 
 
 
