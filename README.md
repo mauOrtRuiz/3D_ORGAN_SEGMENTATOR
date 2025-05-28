@@ -61,12 +61,36 @@ Here we can observe a sample of the same slice before and after rigid registrati
 
 ![image](https://github.com/user-attachments/assets/90251872-28d6-4c3c-9674-330113f28462)
 
+The main rigid registration command is:
 
-5.- Affine registration is applied
+```fixed = ants.image_read("C:/Users/UVMInstaller/Downloads/CT-ORG/final/ctvolume12_bone_only.nii.gz")```
+
+```moving = ants.image_read("C:/Users/UVMInstaller/Downloads/CT-ORG/final/ctvolume11_bone_only.nii.gz")```
+
+```reg = ants.registration(fixed=fixed, moving=moving, type_of_transform='Rigid')```
 
 
 
-6.-  Now deformable registratiopn is applied to the NON-bones structure .nii file 
+
+
+5.- Affine registration is applied, the main commands are:
+
+```fixed = ants.image_read("C:/Users/UVMInstaller/Downloads/CT-ORG/final/ctvolume12_bone_only.nii.gz")```
+
+
+```moving = ants.image_read("C:/Users/UVMInstaller/Downloads/CT-ORG/final/aligned_image_PP12_11.nii.gz")```
+
+```regAf = ants.registration(fixed=fixed, moving=moving, type_of_transform='Affine')```
+
+
+6.-  Now deformable registratiopn is applied to the non-bones structure .nii file. For this operation the image is downsized by 2, next deformable registration is applied with next instructions:
+
+# === Fast deformable registration ===
+```regD = ants.registration(fixed=fixed_down, moving=moving_down,```
+                        ```type_of_transform='SyN',```
+                        ```aff_metric='mattes',```
+                        ```syn_sampling=32,```
+                        ```reg_iterations=(40, 20, 0))  # Adjust for faster or more accurate results```
 
 
 
