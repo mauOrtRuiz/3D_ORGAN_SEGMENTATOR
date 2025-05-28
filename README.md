@@ -45,6 +45,13 @@ For example, Mask of file #12 can be visualized by using 3D Slicer (image #11):
 3.-  The bones structures are now removed from the original CT images, and also images with soft organs removed are obtained. This is done in the file *Filter_CTimages.py*. This uses the poriginal Volume image (volume-11.nii and volume-12.nii) and it gives as an output the CT images already filtered. This is for example the CT bones image for volume 11 image:
 ![image](https://github.com/user-attachments/assets/85d74032-46a3-4a03-af0e-ff387cb631b9)
 
+And this is the CT imaged without bone structures:
+![image](https://github.com/user-attachments/assets/24619e89-1e52-4537-b330-4ce915cab5ac)
+
+
+4.- 
+
+
 
 
 
