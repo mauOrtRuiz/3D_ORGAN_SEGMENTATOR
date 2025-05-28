@@ -3,11 +3,11 @@ Organ_3D_SEGMENTATOR
 
 THIS IS THE CODE TO PERFORM 3D ORGAN REGISTRATION AND SEGMENTATION
 
-This experiment is used to demonstrate deformable registration between two CT images. Images usede in this test came from the CANCER IMAGING ARCHIVE:
+This experiment is used to demonstrate deformable registration between two CT images. Images used in this test came from the CANCER IMAGING ARCHIVE:
 
 https://www.cancerimagingarchive.net/collection/ct-org/ 
 
-Image #12 was selected as the fixed image and image #11 as the moving 
+Image #12 was selected as the fixed image and image #11 as the moving image.
 
 To run this experiment different steps must be exetuted in the next sequence:
 
@@ -39,7 +39,7 @@ Based on TotalSegmentator the bones structures have the following labels:
 
  ```   ]```
 
-The file Filter_bones.py the input are the files *Mask_11.nii* and *Mask_12.nii* obtained in step 1 and the putput are files:   bones_only11.nii.gz and bones_only12.nii.gz
+The file *Filter_bones.py* uses the input files *Mask_11.nii* and *Mask_12.nii* obtained in step 1 and the output are files:   bones_only11.nii.gz and bones_only12.nii.gz
 
 For example, Mask of file #12 can be visualized by using 3D Slicer (image #11):
 
