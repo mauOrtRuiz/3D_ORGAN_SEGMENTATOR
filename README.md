@@ -119,6 +119,24 @@ Then the segmented mask is compared with the original atlas labeled image by the
 ```plot_slices(fixed_array, moving_array, view='sagittal', step=80)```
 
 
+We can see some samples before registration and after deformable registration by some slices:
+
+
+
+![image](https://github.com/user-attachments/assets/735aa17a-2ea2-4ce8-823b-1827f4748f0d)
+
+
+![image](https://github.com/user-attachments/assets/323102b1-aa08-4a89-bf5c-cee9a5217fcb)
+
+
+![image](https://github.com/user-attachments/assets/979216d2-5e8c-49e4-bb68-ee0ea45e1cd7)
+
+
+
+
+
+
+
 
 
 
