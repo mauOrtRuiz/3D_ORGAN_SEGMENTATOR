@@ -37,15 +37,20 @@ Based on TotalSegmentator the bones structures have the following labels:
  ```   ]```
 
 The file Filter_bones.py the input are the files *Mask_11.nii* and *Mask_12.nii* obtained in step 1 and the putput are files:   bones_only11.nii.gz and bones_only12.nii.gz
+
 For example, Mask of file #12 can be visualized by using 3D Slicer (image #11):
 
 ![image](https://github.com/user-attachments/assets/a0b8659c-6901-40bd-a79d-47541dd7a550)
 
 
-3.-  The bones structures are now removed from the original CT images, and also images with soft organs removed are obtained. This is done in the file *Filter_CTimages.py*. This uses the poriginal Volume image (volume-11.nii and volume-12.nii) and it gives as an output the CT images already filtered. This is for example the CT bones image for volume 11 image:
+3.-  The bones structures are now removed from the original CT images, and also images with soft organs removed are obtained. This is done in the file *Filter_CTimages.py*. This uses the poriginal Volume image (volume-11.nii and volume-12.nii) and it gives as an output the CT images already filtered. 
+
+This is for example the CT bones image for volume 11 image:
+
 ![image](https://github.com/user-attachments/assets/85d74032-46a3-4a03-af0e-ff387cb631b9)
 
 And this is the CT imaged without bone structures:
+
 ![image](https://github.com/user-attachments/assets/24619e89-1e52-4537-b330-4ce915cab5ac)
 
 
