@@ -36,4 +36,5 @@ Based on TotalSegmentator the bones structures have the following labels:
 
     ]```
 
+The file Filter_bones.py the input are the files Mask_11.nii and Mask_12.nii obtained in step 1 and the putput are files:   bones_only11.nii.gz and bones_only12.nii.gz
 
