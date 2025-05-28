@@ -85,7 +85,6 @@ The main rigid registration command is:
 
 6.-  Now deformable registratiopn is applied to the non-bones structure .nii file. For this operation the image is downsized by 2, next deformable registration is applied with next instructions:
 
-# === Fast deformable registration ===
 ```regD = ants.registration(fixed=fixed_down, moving=moving_down,```
                         ```type_of_transform='SyN',```
                         ```aff_metric='mattes',```
