@@ -54,7 +54,20 @@ And this is the CT imaged without bone structures:
 ![image](https://github.com/user-attachments/assets/24619e89-1e52-4537-b330-4ce915cab5ac)
 
 
-4.- 
+4.- Now we apply Rigid registration and we obtain the matrix transformation into the variable *reg*.  This and the next steps are implemented in the *Registration_pipeline.py* file
+
+To visualize the result a routine calles *plot_slices* can be called to plpot 2D images of the sagittal, coronal and axial view to visualize a comparative image to see the alignment of both images
+Here we can observe a sample of the same slice before and after rigid registration
+
+![image](https://github.com/user-attachments/assets/90251872-28d6-4c3c-9674-330113f28462)
+
+
+5.- Affine registration is applied
+
+
+
+6.-  Now deformable registratiopn is applied to the NON-bones structure .nii file 
+
 
 
 
