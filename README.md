@@ -96,6 +96,29 @@ The main rigid registration command is:
                         ```reg_iterations=(40, 20, 0))  # Adjust for faster or more accurate results```
 
 
+For a better visualization of the results, we compare the masks of the fixed image and the moving image. To do it the deformable registration output is segmented by totalsegmentator, by the following command:
+
+```TotalSegmentator --help```
+```TotalSegmentator -i C:\Users\UVMInstaller\Downloads\CT-ORG\final\FINAL_nobone11_ct_12_F2.nii -o C:\Users\UVMInstaller\Downloads\CT-ORG\final\MASK_nobone11_ct_12_OUT.nii --fast --ml```
+
+Then the segmented mask is compared with the original atlas labeled image by the *plot_slices* routine
+
+
+```originalG = sitk.ReadImage("C:/Users/UVMInstaller/Downloads/CT-ORG/Soft_only12.nii", sitk.sitkFloat32)```
+
+```movedG = sitk.ReadImage("C:/Users/UVMInstaller/Downloads/CT-ORG/final/MASK_nobone11_ct_12_OUT.nii", sitk.sitkFloat32)```
+
+```moving_array = sitk.GetArrayFromImage(movedG)```
+
+```fixed_array = sitk.GetArrayFromImage(originalG)```
+
+```plot_slices(fixed_array, moving_array, view='axial', step=80)```
+
+```plot_slices(fixed_array, moving_array, view='coronal', step=80)```
+
+```plot_slices(fixed_array, moving_array, view='sagittal', step=80)```
+
+
 
 
 
